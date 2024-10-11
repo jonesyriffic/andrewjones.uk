@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-tight-bolddisplay {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #3F7CAC, #95AFBA);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,0.3)
+        );
+    border-radius: 1rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+}
+
+.glass span {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 900;
+  font-stretch: 175.9%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 1.5em;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+    font-size: 1.25em;
+    line-height: 1.8;
+}
+
+.pride {
+    width: 100%;
+    display: flex;
+}
+
+.pride div {
+    flex: 1;
+    height: 0.1vmax;
+}
+
+.pride div:nth-child(1) {
+    background-color: #ff0101;
+  }
+.pride div:nth-child(2) {
+    background-color: #ffa500;
+  }
+.pride div:nth-child(3) {
+    background-color: #ffff00;
+  }
+.pride div:nth-child(4) {
+    background-color: #028000;
+  }
+.pride div:nth-child(5) {
+    background-color: #0202ff;
+  }
+.pride div:nth-child(6) {
+    background-color: #800180;
+  }
+
+.links {
+    margin: 0;
+    margin-top: calc((13px + 1vw) * 1);
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    max-width: 45vmax;
+    font-size: calc(24px + 1vw);
+}
+
+#intro div ul.socials li {
+    margin-right: calc(24px + 1vw);
+  }
+  #intro div ul.socials li a {
+    color: #ffffff;
+    -webkit-transition: color 0.1s ease-in;
+    transition: color 0.1s ease-in;
+  }
+  #intro div ul.socials li a:hover {
+    color: #336699;
+  }
+
+.circle1,.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0.3)
+        );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+}
