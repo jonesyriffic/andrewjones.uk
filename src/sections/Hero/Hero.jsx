@@ -1,39 +1,35 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/avatar.jpg';
+import heroImg from '../../assets/hero-img.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
-import blueskyLight from '../../assets/bluesky-light.svg';
-import blueskyDark from '../../assets/bluesky-dark.svg';
+import blueSkyLight from '../../assets/bluesky-light.svg';
+import blueSkyDark from '../../assets/bluesky-dark.svg';
 import instagramLight from '../../assets/instagram-light.svg';
 import instagramDark from '../../assets/instagram-dark.svg';
-import xboxLight from '../../assets/xbox-light.svg';
-import xboxDark from '../../assets/xbox-dark.svg';
-import applemusicLight from '../../assets/applemusic-light.svg'
-import applemusicDark from '../../assets/applemusic-dark.svg'
-import CV from '../../assets/cv.pdf';
+import moreLinksLight from '../../assets/links-light.svg';
+import moreLinksDark from '../../assets/links-dark.svg';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === 'light' ? sun : moon;
-  const blueskyIcon = theme === 'light' ? blueskyLight : blueskyDark;
+  const blueSkyIcon = theme === 'light' ? blueSkyLight : blueSkyDark;
   const instagramIcon = theme === 'light' ? instagramLight : instagramDark;
-  const xboxIcon = theme === 'light' ? xboxLight : xboxDark;
-  const applemusicIcon = theme === 'light' ? applemusicLight : applemusicDark;
+  const moreLinksIcon = theme === 'light' ? moreLinksLight : moreLinksDark;
 
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img
-          src={heroImg}
           className={styles.hero}
+          src={heroImg}
           alt="Profile picture of Andrew Jones"
         />
         <img
           className={styles.colorMode}
           src={themeIcon}
-          alt="Color mode icon"
+          alt="Colour mode icon"
           onClick={toggleTheme}
         />
       </div>
@@ -43,25 +39,32 @@ function Hero() {
           <br />
           Jones
         </h1>
-        <h2>Digital Product Innovation Manager</h2>
+        <h2>Digital Innovation Manager</h2>
         <span>
           <a href="https://bsky.app/profile/andrewjones.uk" target="_blank">
-            <img src={blueskyIcon} alt="Bluesky icon" />
+            <img src={blueSkyIcon} alt="BlueSky icon" />
           </a>
           <a href="https://www.instagram.com/jonesyriffic" target="_blank">
             <img src={instagramIcon} alt="Instagram icon" />
           </a>
-          <a href="https://account.xbox.com/en-GB/Profile?gamerTag=jonesyriffic" target="_blank">
-            <img src={xboxIcon} alt="Xbox icon" />
-          </a>
-          <a href="https://music.apple.com/profile/jonesyriffic" target="_blank">
-            <img src={applemusicIcon} alt="Apple Music icon" />
+          <a href="https://links.andrewjones.uk" target="_blank">
+            <img src={moreLinksIcon} alt="More Links icon" />
           </a>
         </span>
         <p className={styles.description}>
-          Researching and developing new digital service product innovations.
+          📍 London, UK
+          <br />
+          🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh
+          <br />
+          🏳‍🌈 Gay, He/Him
+          <br />
+          🎮 Xbox, Playstation, PC
+          <br />
+          🎲 DnD Beginner
+          <br />
+          🤓 Geek
         </p>
-        <a href="https://linktr.ee/Jonesyriffic" target="_blank">
+        <a href="https://links.andrewjones.uk" target="_blank">
           <button className="hover">More Links</button>
         </a>
       </div>
