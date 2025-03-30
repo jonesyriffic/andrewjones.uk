@@ -40,17 +40,6 @@ function Hero() {
           Jones
         </h1>
         <h2>Digital Innovation Manager</h2>
-        <span>
-          <a href="https://bsky.app/profile/andrewjones.uk" target="_blank">
-            <img src={blueSkyIcon} alt="BlueSky icon" />
-          </a>
-          <a href="https://www.instagram.com/jonesyriffic" target="_blank">
-            <img src={instagramIcon} alt="Instagram icon" />
-          </a>
-          <a href="https://links.andrewjones.uk" target="_blank">
-            <img src={moreLinksIcon} alt="More Links icon" />
-          </a>
-        </span>
         <p className={styles.description}>
           📍 London, UK
           <br />
