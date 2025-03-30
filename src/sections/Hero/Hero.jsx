@@ -64,9 +64,6 @@ function Hero() {
           <br />
           🤓 Geek
         </p>
-        <a href="https://links.andrewjones.uk" target="_blank">
-          <button className="hover">More Links</button>
-        </a>
       </div>
     </section>
   );
